@@ -6,6 +6,10 @@ app = FastAPI()
 def home():
     return {"message": "FastAPI backend running"}
 
-@app.get("/ask")
+@app.get("/add")
 def add(a: int, b: int):
-    return a+b
+    return {"result": a + b}
+
+@app.get("/multiply")
+def multiply(a: int, b: int):
+    return {"result": a * b}

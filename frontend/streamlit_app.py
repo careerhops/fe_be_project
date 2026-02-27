@@ -1,9 +1,23 @@
 import streamlit as st
 import requests
 
-st.title("Streamlit Frontend")
+st.title("Calculator UI")
 
-response = requests.get("http://localhost:8000")
+a = st.number_input("Enter first number")
+b = st.number_input("Enter second number")
 
-st.write(response.json())
+if st.button("Add"):
+    response = requests.get(
+        "http://localhost:8000/add",
+        params={"a": a, "b": b}
+    )
+    st.write("Result:", response.json()["result"])
+
+
+if st.button("Multiply"):
+    response = requests.get(
+        "http://localhost:8000/multiply",
+        params={"a": a, "b": b}
+    )
+    st.write("Result:", response.json()["result"])
 
