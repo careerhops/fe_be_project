@@ -18,6 +18,7 @@ This very application which you're using.
 - Display chat results in a Frontend UI.
 - Understand CI/CD by building a pipeline
 - Then understand what is an AI Agent
+    - On Day 3: Use this application, through Chat you can ask Agents to perform your tasks.
 """) 
 
 tab1, tab2 = st.tabs(["🤖 Chat Assistant", "🧮 Calculator APIs"])
