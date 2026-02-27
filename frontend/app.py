@@ -35,6 +35,9 @@ with tab1:
             params={"question": prompt}
         )
 
+        data = response.json()
+        st.write(data)
+        answer = data["answer"]
         answer = response.json()["answer"]
 
         st.session_state.messages.append(
