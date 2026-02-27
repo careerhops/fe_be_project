@@ -39,7 +39,7 @@ def ask(question: str):
     }
 
     payload = {
-        "model": "arcee-ai/trinity-large-preview:free",
+        "model": "google/gemma-3-27b-it:free",
         "messages": [
             {"role": "user", "content": question}
         ]
