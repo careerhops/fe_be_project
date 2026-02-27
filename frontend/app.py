@@ -37,7 +37,6 @@ with tab1:
 
         data = response.json()
         st.write(data)
-        answer = data["answer"]
         answer = response.json()["answer"]
 
         st.session_state.messages.append(

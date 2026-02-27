@@ -7,8 +7,6 @@ load_dotenv()
 
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
-OPENROUTER_API_KEY="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"
-#print(f"OPENROUTER_API_KEY loaded:", OPENROUTER_API_KEY is not None, OPENROUTER_API_KEY)
 
 
 app = FastAPI()
@@ -41,7 +39,7 @@ def ask(question: str):
     }
 
     payload = {
-        "model": "openai/gpt-3.5-turbo",
+        "model": "arcee-ai/trinity-large-preview:free",
         "messages": [
             {"role": "user", "content": question}
         ]
