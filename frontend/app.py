@@ -3,7 +3,18 @@ import requests
 
 API_BASE = "http://localhost:8000"
 
-st.title("AI + API Demo")
+st.title("Welcome to Mastery on AI")
+st.subheader("Live Hands-on training! ")
+
+st.markdown("""
+### In Day 2, you will do
+
+- Build a Backend service
+- Connect to LLMs from that service
+- Send prompt to Cloud-hosted LLMs and get response back
+- Build a Front-end service
+- Display chat results in a Frontend UI.
+""") 
 
 tab1, tab2 = st.tabs(["🤖 Chat Assistant", "🧮 Calculator APIs"])
 
