@@ -7,13 +7,15 @@ st.title("Welcome to Mastery on AI")
 st.subheader("Live Hands-on training! ")
 
 st.markdown("""
-### In Day 2, you will do
+### In Day 2, you will build:
 
-- Build a Backend service
+- A Backend service
 - Connect to LLMs from that service
 - Send prompt to Cloud-hosted LLMs and get response back
 - Build a Front-end service
 - Display chat results in a Frontend UI.
+- Understand CI/CD by building a pipeline
+- Then understand what is an AI Agent
 """) 
 
 tab1, tab2 = st.tabs(["🤖 Chat Assistant", "🧮 Calculator APIs"])
