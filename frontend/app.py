@@ -9,6 +9,8 @@ st.subheader("Live Hands-on training! ")
 st.markdown("""
 ### In Day 2, you will build:
 
+This very application which you're using.
+            
 - A Backend service
 - Connect to LLMs from that service
 - Send prompt to Cloud-hosted LLMs and get response back
